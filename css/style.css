@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: var(--tg-theme-text-color);
+    background-color: var(--tg-theme-bg-color);
+    margin: 0px;
+}
+
+button.btn0 {
+    border: 2px solid black;
+    margin: 20px;
+    height: 70px;
+    width: 150px;
+    font-size: 18px;
+}
+
+button.btn1 {
+    border: 2px solid black;
+    margin: 40px;
+    height: 70px;
+    width: 150px;
+    font-size: 18px;
+}
+
+img.bot {
+    width: 150px;
+    margin: 20px auto;
+}
+
+#main {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100px;
+    margin: 10px auto;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-size: 10px;
+    font-weight: 30;
+    cursor: pointer;
+    transition: all 500ms ease;
+    color: var(--tg-theme-button-color);
+    background: var(--tg-theme-button-text-color);
+}
+
+button:hover {
+    background: #dece78;
+}
+
+:root {
+    --tg-theme-text-color: #4b280a;
+    --tg-theme-bg-color: white;
+    --tg-theme-button-color: #333;
+    --tg-theme-button-text-color: green;
+}
+
+#form {
+    display: none;
+    width: 90%;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#form label span {
+    color: red;
+}
+
+#form label,
+#form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form input {
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+/* Стили из style_tea.css */
+
+.container {
+	display: none;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 160px 160px;
+    row-gap: 100px;
+}
+
+.usercard {
+	display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img {
+    width: 100px;
+}
+
+.item {
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+
+button.btn {
+    border: 2px solid black;
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background .2s linear;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background: lightgreen;
+}
+
+#tea {
+    max-width: 800px;
+    margin: 20px auto;
+	margin-bottom: 140px;
+}
+
+#cart {
+	display: none;
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#total {
+    font-weight: bold;
+}
+
+#clear-cart,
+#checkout {
+    margin-top: 15px;
+}
