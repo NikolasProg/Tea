@@ -1,3 +1,4 @@
+$(".phone_mask").mask("+7(999)999-99-99"); 
 $(document).ready(function () {
     var cartItems = [];
     var total = 0;
