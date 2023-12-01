@@ -81,8 +81,11 @@ $(document).ready(function () {
         fillUserData();
     });
 
+    let tg = window.Telegram.WebApp;
     var buy = $("#buy");
     var order = $("#order");
+
+    tg.expand();
 
     buy.click(function () {
         $("#main").hide();
@@ -98,35 +101,37 @@ $(document).ready(function () {
     });
 
     order.click(function () {
-        $("#error").text('');
-        var name = $("#user_name").val();
-        var email = $("#user_email").val();
-        var phone = $("#user_phone").val();
-        var koment = $("#user_koment").val();
+    $("#error").text('');
+    let name = $("#user_name").val();
+    let email = $("#user_email").val();
+    let phone = $("#user_phone").val();
+    let koment = $("#user_koment").val();
+    let items = $("#cart-items").text();
+    let total = $("#total").text();
 
-        if (name.length < 5) {
-            $("#error").text("Ошибка в имени");
-            return;
-        }
-        if (email.length < 5) {
-            $("#error").text("Ошибка в email");
-            return;
-        }
-        if (phone.length < 5) {
-            $("#error").text("Ошибка в номере телефона");
-            return;
-        }
+    if (name.length < 5) {
+        $("#error").text("Ошибка в имени");
+        return;
+    }
+    if (email.length < 5) {
+        $("#error").text("Ошибка в email");
+        return;
+    }
+    if (phone.length < 5) {
+        $("#error").text("Ошибка в номере телефона");
+        return;
+    }
 
-        var data = {
-            name: name,
-            email: email,
-            phone: phone,
-            koment: koment,
-            items: cartItems,
-            total: total
-        }
+    let data = {
+        name: name,
+        email: email,
+        phone: phone,
+        koment: koment,
+        items: items,
+        total: total
+    }
 
-        tg.sendData(JSON.stringify(data));
-        tg.close();
-    });
+    tg.sendData(JSON.stringify(data));
+    tg.close();
+});
 });
