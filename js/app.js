@@ -96,12 +96,6 @@ $(document).ready(function () {
     });
 
     order.click(function () {
-        $("#tea").hide();
-        $("#form").show();
-        fillUserData();
-    });
-
-    order.click(function () {
     $("#error").text('');
     let name = $("#user_name").val();
     let email = $("#user_email").val();
