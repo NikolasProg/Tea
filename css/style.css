@@ -119,7 +119,7 @@ button:hover {
 /* Стили из style_tea.css */
 
 .container {
-	display: none;
+    display: none;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
@@ -130,10 +130,11 @@ button:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 160px 160px;
     row-gap: 100px;
+    align-items: center;
 }
 
 .usercard {
-	display: none;
+    display: none;
     text-align: center;
     margin-top: 20px;
 }
