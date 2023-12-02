@@ -144,6 +144,7 @@ button:hover {
 
 .item {
     text-align: center;
+    flex: 1;
 }
 
 select {
