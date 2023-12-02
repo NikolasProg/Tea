@@ -129,7 +129,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 160px 160px;
-    row-gap: 80px;
+    row-gap: 100px;
 }
 
 .usercard {
@@ -172,9 +172,10 @@ button.btn:hover {
     background: lightgreen;
 }
 
-#coffee {
+#tea {
     max-width: 800px;
     margin: 20px auto;
+	margin-bottom: 140px;
 }
 
 #cart {
