@@ -175,7 +175,8 @@ button.btn:hover {
 #tea {
     max-width: 800px;
     margin: 20px auto;
-	margin-bottom: 140px;
+    margin-bottom: 140px;
+    padding: 0 10px; 
 }
 
 #cart {
